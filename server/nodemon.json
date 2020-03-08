@@ -1,0 +1,17 @@
+{
+  "ignore": [
+    "node_modules/**/node_modules"
+  ],
+  "verbose": true,
+  "watch": [
+    "server.js",
+    "controllers/",
+    "loaders/",
+    "public/",
+    "routes/",
+    "services/",
+    "views/",
+    "models/"
+  ],
+  "ext": "js,css,ejs,json"
+}

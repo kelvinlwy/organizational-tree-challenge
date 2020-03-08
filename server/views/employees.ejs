@@ -1,0 +1,23 @@
+<table>
+    <thead>
+    <tr>
+        <% for (var level in levels) { %>
+            <th>
+                <p>
+                    <%- level %>
+                </p>
+                <p>
+                    <span>
+                        <% for (var i = 0; i < levels[level].length; i++) { %>
+                            <%- i === levels[level].length - 1 ? levels[level][i].title : levels[level][i].title + ' /' %>
+                        <% } %>
+                    </span>
+                </p>
+            </th>
+        <% } %>
+    </tr>
+    </thead>
+    <tbody>
+    <%- include('employee', {employees, levels}) %>
+    </tbody>
+</table>

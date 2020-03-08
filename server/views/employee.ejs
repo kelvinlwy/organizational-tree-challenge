@@ -1,0 +1,15 @@
+<% employees.forEach(function(employee){ %>
+    <tr>
+        <% for (var level in levels) { %>
+            <td>
+                <% if (!employee.supervisor_id && level < employee.position_level ) { %>
+                    <%# indicate the employee without supervisor %>
+                    -
+                <% } else { %>
+                    <%- level == employee.position_level ? `${employee.first_name} - ${employee.title}` : '' %>
+                <% } %>
+            </td>
+        <% } %>
+    </tr>
+    <%- include('employee', {employees: employee.subordinates, levels}) %>
+<% }) %>
