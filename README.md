@@ -154,5 +154,5 @@ The showcase data:
 
 The organizational tree illustrated as below:
 
-![Organizational Tree](https://github.com/kelvinlwy/organizational-tree-challenge/blob/master/showcase/organizational-tre.png)
+![Organizational Tree](https://github.com/kelvinlwy/organizational-tree-challenge/blob/master/showcase/organizational-tree.png)
 
